@@ -1,0 +1,49 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.imgr {
+  -webkit-animation: 6s rotate linear infinite;
+  animation: 1s rotate linear infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.imgr1 {
+  -webkit-animation: 6s rotate linear infinite;
+  animation: 0.1s rotate linear infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+@keyframes calefon {
+  from {
+    transform: none;
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.calentador {
+  -webkit-filter: drop-shadow(2px 5px 10px rgb(252, 0, 0));
+  filter: drop-shadow(2px 5px 10px rgb(255, 0, 0));
+}
+
+.calentador1 {
+  -webkit-filter: drop-shadow(2px 5px 10px rgb(252, 0, 0));
+  filter: drop-shadow(2px 5px 10px rgb(255, 0, 0));
+  animation: calefon 0.5s infinite;
+  transform-origin: center;
+}
+
+.scroll {
+  height: 700px;
+  overflow-y: scroll;
+}
